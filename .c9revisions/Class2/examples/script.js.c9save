@@ -1,4 +1,0 @@
-{"ts":1348097426361,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"/*\n    This put your JavaScript in here!\n*/\n\n\n"]],"start1":0,"start2":0,"length1":0,"length2":46}]],"length":46}
-{"contributors":[],"silentsave":false,"ts":1348097458548,"patch":[[{"diffs":[[0,"re!\n*/\n\n"],[1,"function validate(element) {\n    \n    \n}\n\n"],[0,"\n"]],"start1":37,"start2":37,"length1":9,"length2":51}]],"length":88,"saved":false}
-{"ts":1348097540835,"patch":[[{"diffs":[[0,"   \n    "],[1,"if(!element.value) {\n        element.style = \"border: 1px solid red\";\n    } else {\n        element.style = \"border:none\";\n    }"],[0,"\n}\n\n\n"]],"start1":75,"start2":75,"length1":13,"length2":140}]],"length":215,"saved":false}
-{"ts":1348097545856,"patch":[[{"diffs":[[0,") {\n"],[-1,"    \n"],[0,"    "]],"start1":70,"start2":70,"length1":13,"length2":8}]],"length":210,"saved":false}
