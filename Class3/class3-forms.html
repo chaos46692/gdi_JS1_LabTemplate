@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 3 form example</title>
+        <script type="text/javascript" src="class3-forms.js"></script>
+    </head>
+    <body>
+    
+    <form id="myForm" name="myForm">
+        <label>Age: </label><input type="text" name="age" id="age" onBlur="checkAge(this)" />
+        <label>Felon Status</label><input type="text" name="felonStatus" id="felonStatus" onBlur="checkStatus(this)" />
+        <input type="button" name="process" id="process" value="What can I do?" onClick="verifyAbility()" />
+    </form>
+    
+    <div id="result"></div>
+    </body>
+</html>
