@@ -1,0 +1,16 @@
+div {
+    height: 50px;
+    width: 200px;
+    text-align:center;
+}
+#exampleContainer {
+    border: 2px solid black;
+}
+
+#codeAlongContainer {
+    border: 2px solid red;
+}
+
+#miniLabContainer {
+    border: 2px solid blue;
+}
