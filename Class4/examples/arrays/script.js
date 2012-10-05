@@ -1,13 +1,13 @@
 
 
 function updateOutput() {
-     var elem = document.getElementById('frmMain').elements;
+    var elem = document.getElementById('frmMain').elements;
      
     var i;
     var s = '';
     for(i = 0; i < elem.length; i++) {
         var eachElem = elem[i];
-        s += '<p>' + eachElem.value + ' </p>';
+        s += '<p>' + eachElem.name + ' = ' + eachElem.value + ' </p>';
     }
     
     var divOutput = document.getElementById("exampleOutput");
