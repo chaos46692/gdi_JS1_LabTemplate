@@ -1,0 +1,42 @@
+
+img {
+    max-width:  100%;    
+}
+
+#fruit-img {
+    position:   relative;
+    max-width:  400px;    
+    max-height:  400px;
+    z-index:    1;
+}
+
+#fruitCost {
+    border:     none;
+    position:   relative;   
+    width:      400px;
+}
+
+#cost-out {
+    font-size:      16pt;
+    font-weight:    900;
+    margin:         0 auto;
+    position:       absolute;
+    text-align:     center;
+    top:            38px;
+    width:          100%;
+    z-index:        20;
+}
+
+.price-img {
+    position:   absolute; 
+    z-index:    -1;
+}
+
+#cost-tag {
+    display:    none;
+    position:   absolute;
+    left:       225px;
+    top:        200px;
+    width:      150px;
+    z-index:    20;
+}

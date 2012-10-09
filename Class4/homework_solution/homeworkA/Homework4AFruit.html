@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 4 - Price that Fruit </title>
+        <link rel="stylesheet" type="text/css" href="fruitStyle.css" />
+        <script type="text/javascript" src="fruit.js"></script>
+    </head>
+    <body>
+    
+    <!--
+        Ask the user for a fruit, then tell them how much that fruit costs
+        
+        Things you can do:
+            o It should definitely work! =)
+            o The user interface - make it as friendly as possible
+            o Make it pretty
+            o how many fruit to put in?
+            o what if you don't recognize a particular input?
+            
+        Don't forget to ask for help if you need it - that's what we are here for!
+    
+    -->
+        
+    
+    <h1>Let's buy some fruit</h1>
+    <form id="fruitForm" name="fruitForm" onBlur="return updateCost();" >
+        <label>Gimme some fruit :</label><input  type="text" id="fruit" name="fruit" onkeypress="return checkEnter(event);" onBlur="updateCost();" />    <br />
+        
+    </form>
+    
+    <div id="fruitCost">
+        <div id="fruit-img"> </div>
+        <div id="cost-tag">
+            <img class="price-img" src="./img/sign.jpg" />
+            <div id="cost-out"> </div>
+        </div>
+        <!-- output here -->
+    </div>
+
+
+
+    </body>
+</html>
