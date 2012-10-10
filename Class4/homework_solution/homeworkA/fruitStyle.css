@@ -40,3 +40,5 @@ img {
     width:      150px;
     z-index:    20;
 }
+
+div#preload { display: none; }

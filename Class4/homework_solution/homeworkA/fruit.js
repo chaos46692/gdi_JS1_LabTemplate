@@ -8,16 +8,27 @@
 */
 var fruitField;
 
-function getFruit() {
+/* returns the form field */
+function getFruitField() {
     if ((fruitField === null) || (fruitField === undefined)) {
         fruitField = document.getElementById("fruit");
         
-        if (fruitField === null) {
-            return "I AIN'T GOT NO FRUIT!";
+        if ((fruitField === null) || (fruitField === undefined)) {
+            return undefined;
         }
     }
     
-    return fruitField.value;
+    return fruitField;
+    
+}
+
+/* returns the form value */
+function getFruit() {
+    var ff = getFruitField();
+    if (ff === undefined) {
+        return "I AIN'T GOT NO FRUIT!";
+    }
+    return ff.value;
     
 }
 
@@ -37,9 +48,11 @@ function checkEnter(e){
            and return false which prevents the 
            form from submitting */
         updateCost();
+        var ff = getFruitField();
+        ff.select();
         return false;
     } else {
-        return true;   /* everything's okay - return true (= let the key go through */
+        return true;   /* everything's okay - return true (-> let the key go through) */
     }
     
     /* check out more key codes here:
@@ -137,7 +150,7 @@ function updateCost() {
         case "": case "s":
             cost = ;
             break;
-            */
+*/
         
     }
     if (output) {
@@ -154,7 +167,8 @@ function updateCost() {
             showCost();
         } else {
             hideCost();
-            s = wtf;
+            outputImg.innerHTML = wtf;
+            return;
         }
         output.innerHTML =  s;
         
