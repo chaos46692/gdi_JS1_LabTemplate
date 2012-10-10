@@ -1,0 +1,57 @@
+
+img {
+    max-width:  100%;    
+}
+
+#fruit-img {
+    position:   relative;
+    max-width:  400px;    
+    max-height:  400px;
+    z-index:    1;
+}
+
+#fruitCost {
+    background-image: url('./img/fruit.jpg');
+    border:     none;
+    position:   relative;   
+    height:     300px;
+    width:      300px;
+    background-position: 0px -9000px;
+    background-repeat: no-repeat;
+}
+
+#cost-out {
+    font-size:      16pt;
+    font-weight:    900;
+    margin:         0 auto;
+    position:       absolute;
+    text-align:     center;
+    top:            38px;
+    width:          100%;
+    z-index:        20;
+}
+
+.price-img {
+    position:   absolute; 
+    z-index:    -1;
+}
+
+#cost-tag {
+    display:    none;
+    position:   absolute;
+    left:       225px;
+    top:        200px;
+    width:      150px;
+    z-index:    20;
+}
+
+div#preload { display: none; }
+
+.wtf {
+    font-size: 70%;
+    line-height: 1.0;
+    width: 80%;
+    margin:0 auto;
+    top: -19px;
+    position:relative;
+}
