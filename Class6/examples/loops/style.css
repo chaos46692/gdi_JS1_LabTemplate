@@ -1,0 +1,18 @@
+* {
+    font-family: Arial;
+}
+div, fieldset {
+    border:2px solid black;
+    padding:15px;
+    margin:5px;
+}
+section {
+    border:2px solid black;
+    width:50%;
+    padding: 15px;
+    margin-bottom:30px;
+}
+h2 {
+    margin:0;
+    margin-bottom:15px;
+}

@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Class 4 For Loops Example</title>
+        <title>Class 6 For and While loop labs</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
-        <h1>For Loops</h1>
-    
-        <div id="exampleContainer"> 
+        <h1>For and While Loop Labs</h1>
+        <section>
+            <h2>For Loop Lab</h2>
         
-        </div>
+            <form name="forForm">
+                <fieldset>
+                    <legend>For loop Form</legend>
+                    <label for="number">Enter a number: </label><input type="text" id="number" name="number" />
+                    <input type="button" value="Process Form" onclick="processForm()" />
+                </fieldset>
+            </form>
+            <h3>For Loop Lab Output</h3>
+            <div id="lab1"> 
+            <!-- output for for loop goes here -->
+            </div>
+        </section>
+        <section>
+            <h2>While Loop Lab</h2>
         
-        <div id="codeAlongContainer"> 
-        
-        </div>
-        
-        <div id="miniLabContainer"> 
-        
-        </div>
+            <form name="whileForm">
+                <fieldset>
+                    <legend>While loop Form</legend>
+                    <input type="button" value="Run average script" onclick="determineAverage()" />
+                </fieldset>
+            </form>
+            <h3>While Loop Lab Output</h3>
+            <div id="lab2"> 
+            <!-- output for while loop goes here -->
+            </div>
+        </section>
     </body>
 </html>

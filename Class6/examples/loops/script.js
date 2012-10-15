@@ -1,0 +1,6 @@
+function processForm() {
+    
+}
+
+function determineAverage() {
+}
