@@ -9,30 +9,34 @@
         <h1>Arrays!</h1>
     
         <div id="exampleContainer"> 
-            <h2>Example</h2>
-            <h3>Example form</h3>
-            <form id="frmMain" name="frmMain">
-                <label for="txtInput1">Field 1</label><input type="text" name="txtInput1" value="Text 1" onBlur="updateOutput();" /><br />
-                <label for="txtInput2">Field 2</label><input type="text" name="txtInput2" value="Text 2" onBlur="updateOutput();" /><br />
-                <label for="txtInput3">Field 3</label><input type="text" name="txtInput3" value="Text 3" onBlur="updateOutput();" /><br />
-                <label for="txtInput4">Field 4</label><input type="text" name="txtInput4" value="Text 4" onBlur="updateOutput();" /><br />
-                <label for="txtInput5">Field 5</label><input type="text" name="txtInput5" value="Text 5" onBlur="updateOutput();" /><br />
-            </form>
-            
-            <h3>Example Output</h3>
+            <h2>Example Container</h2>
+            <a href="#" onClick="example();">Click Me</a>
             <div id="exampleOutput">
             
-            </div>
-            
-            
+            </div>            
         </div>
         
         <div id="codeAlongContainer"> 
-        
+            <h2>Code Along</h2>
+
+            <h3>Code Along form</h3>
+            <form id="frmMain" name="frmMain">
+                <label for="txtInput1">Cow</label><input type="text" name="txtInput1" value="Moo"  /><br />
+                <label for="txtInput2">Pig</label><input type="text" name="txtInput2" value="Oink" /><br />
+                <label for="txtInput3">Cat</label><input type="text" name="txtInput3" value="Meow"  /><br />
+                <label for="txtInput4">Horse</label><input type="text" name="txtInput4" value="Apple? You have an apple? Apple? Do you have one?"  /><br />
+                <label for="txtInput5">Dog</label><input type="text" name="txtInput5" value="Woof" onBlur="updateOutput();"  /><br />
+                <button onClick="codeAlongUpdate(); return false;" />CLICK ME! </button>
+            </form>
+            
+            <h3>Code Along Output</h3>
+            <div id="codeAlongOutput">
+            
+            </div> 
         </div>
         
         <div id="miniLabContainer"> 
-        
+            <h2>miniLab</h2>
         </div>
     </body>
 </html>

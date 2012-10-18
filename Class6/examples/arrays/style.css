@@ -1,17 +1,28 @@
 div {
-    margin: 1em auto;
-    min-height: 150px;
-    width: 80%;
+    margin:                 1em auto;
+    min-height:             150px;
+    width:                  80%;
 }
+
+h1 {
+    text-align:             center;
+}
+
+
 #exampleContainer {
-    border: 2px solid black;
+    border:                 2px solid black;
 }
 
 
 #codeAlongContainer {
-    border: 2px solid red;
+    border:                 2px solid red;
+}
+
+#codeAlongContainer label {
+    float:                  left;
+    width:                  4em;   
 }
 
 #miniLabContainer {
-    border: 2px solid blue;
+    border:                 2px solid blue;
 }
