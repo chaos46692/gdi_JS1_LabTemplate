@@ -68,12 +68,14 @@ function update(fld) {
 
 function updateCost() {
     var fruit = getFruit();  // fruitField.value.toLowerCase();
-    var output = document.getElementById("cost-out");
-    var bgImg = document.getElementById("fruitCost");
+    //var output = document.getElementById("cost-out");
+    
     var cost = -1.0;
     var unit = "lb";
     var img = 20;
     var wtf = "";
+    
+    clearError();
     
     /* fruit comomodity prices from
         http://www.ams.usda.gov/mnreports/fvwretail.pdf
@@ -154,48 +156,128 @@ function updateCost() {
 */
         
     }
-    if (output) {
-        var s = "";
-        if (wtf === "") {
-            if (cost < 0.0) {
-                hideCost();
-                //outputImg.innerHTML = "I could not find that fruit, sorry!";
-                //return false;
-            } else {
-                s = "$" + cost.toFixed(2) + " / " + unit;  
-                showCost();
-            }
-            
-            
+    
+    var sCostMsg = "";
+    if (wtf === "") {
+        if (cost < 0.0) {
+            hideCost();
+            appendError("I could not find that fruit, sorry!");
+            //outputImg.innerHTML = "I could not find that fruit, sorry!";
+            //return false;
         } else {
-            s = wtf;
+            sCostMsg = "$" + cost.toFixed(2) + " / " + unit;  
             showCost();
-            //hideCost();
-            //outputImg.innerHTML = wtf;
-            //return;
         }
-        output.innerHTML =  s;
         
-        if (bgImg) {
-            //outputImg.innerHTML = '<img src="' + img + '">';
-            bgImg.style.backgroundPosition = "0px -" + (img-1) * 300 + "px";
-        }
-    }    
+        
+    } else {
+        sCostMsg = wtf;
+        showCost();
+    }
+    //output.innerHTML =  s;
+    
+    writeToDiv("cost-out",sCostMsg);
+    setFruitImage(img);
+    
+    //var bgImg = document.getElementById("fruitCost");
+    //if (bgImg) {
+        //outputImg.innerHTML = '<img src="' + img + '">';
+    //    bgImg.style.backgroundPosition = "0px -" + (img-1) * 300 + "px";
+    //}
 
 }
 
-function showCost() {
-    var cost = document.getElementById("cost-tag");
-    if (cost) {
-        cost.style.display = "block";   
+function setFruitImage(nIndex) {
+    var bgImg = document.getElementById("fruitCost");
+    if (bgImg) {
+        bgImg.style.backgroundPosition = "0px -" + (nIndex-1) * 300 + "px";
+    }  else {
+        appendError("Could not get the fruit image div <em>fruitCost</em>")  ;
     }
+}
+
+/* ===================================================================
+    These functions allow us to write to / clear divs more
+    easily
+====================================================================== */
+function writeToDiv(id,html) {
+    var output = document.getElementById(id);
+    if (output) {
+        output.innerHTML = html;   
+        return true;
+    } else {
+        return false;   
+    }
+}
+
+function clearDiv(id) {
+    var output = document.getElementById(id);
+    if (output) {
+        output.innerHTML = "";   
+        return true;
+    } else {
+        return false;   
+    }
+}
+
+/* ===================================================================
+    Show / hide a div
+====================================================================== */
+function showDiv(id) {
+    var divToShow = document.getElementById(id);
+    if (divToShow) {
+        divToShow.style.display = "block";
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+function hideDiv(id) {
+    var divToHide = document.getElementById(id);
+    if (divToHide) {
+        divToHide.style.display = "none";
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/* ===================================================================
+    Show / hide the cost div
+====================================================================== */
+function showCost() {
+    if (!showDiv("cost-tag")) {
+        writeToDiv("error","Could no find tag <em>cost-tag</em>");
+    }
+
 }
 
 function hideCost() {
-    var cost = document.getElementById("cost-tag");
-    if (cost) {
-        cost.style.display = "none";
+    if (!hideDiv("cost-tag")) {
+        writeToDiv("error","Could no find tag <em>cost-tag</em>");
     }
+}
+
+/* ===================================================================
+    Write to the error div
+====================================================================== */
+function getError() {
+    var err = document.getElementById("error");
+    if (err) {
+        return err.innerHTML;
+    } else {
+        return "";
+    }
+}
+
+function appendError(msg) {
+      writeToDiv("error",getError() + "<p><strong>" + msg + "</strong><p>"); 
+}
+
+function clearError() {
+    clearDiv("error");   
 }
 
 

@@ -11,7 +11,8 @@ img {
 }
 
 #fruitCost {
-    background-image: url('./img/fruit.jpg');
+    //background-image: url('./img/fruit.jpg');
+    background-image: url('http://test.shallowhill.com/images/fruit.jpg');
     border:     none;
     position:   relative;   
     height:     300px;
