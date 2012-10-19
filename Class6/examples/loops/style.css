@@ -16,3 +16,11 @@ h2 {
     margin:0;
     margin-bottom:15px;
 }
+
+table, td {
+    border:1px solid black;
+}
+
+td {
+    width:2em;
+}
