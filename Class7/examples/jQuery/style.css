@@ -1,0 +1,27 @@
+
+
+h1, h2, h3 {
+    clear:                  both;
+    float:                  left;
+}
+
+div.testClass, div#alert {
+    border:                 1px solid blue;
+    clear:                  both;
+    float:                  left;
+    
+    min-width:              50%;
+    min-height:             150px;
+
+}
+
+div#colLeft, div#colRight {
+    border:                 2px solid black;
+    float:                  left;
+    padding:                1em;
+    width:                  45%;
+}
+
+div#colLeft {
+    clear:                  left;   
+}
