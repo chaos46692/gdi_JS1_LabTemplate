@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slideshow</title>
+        <link rel="stylesheet" type="text/css" href="style/slideshow.css" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript">
+        if (typeof jQuery == 'undefined')
+        {
+            document.write(unescape("%3Cscript src='./script/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+        </script>
+        <script type="text/javascript" src="script/slideshow.js"></script>
+    </head>
+    <body>
+        <h1>Slideshow</h1>
+        <div id="slideshow">
+            <img src="images/pic1.jpg" class="active" />
+            <img src="images/pic2.jpg" />
+            <img src="images/pic3.jpg" />
+            <img src="images/pic4.jpg" />
+            <img src="images/pic5.jpg" />
+            <img src="images/pic6.jpg" />
+            <img src="images/pic7.jpg" />
+        </div>
+    </body>
+</html>

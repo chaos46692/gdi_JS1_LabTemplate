@@ -1,0 +1,24 @@
+/*
+  Style Sheet
+*/
+
+* { 
+    font-family:Arial 
+}
+
+.error {
+    border: 2px solid red; 
+}
+
+.hidden {
+    display:none;
+}
+
+#errorText {
+    color:red;
+    padding-bottom: 15px;
+}
+
+#madDiv {
+    padding-top: 15px;
+}

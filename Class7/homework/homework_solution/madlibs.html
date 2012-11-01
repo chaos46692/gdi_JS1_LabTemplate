@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mad Libs&reg; What's in a name?</title>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript">
+        if (typeof jQuery == 'undefined')
+        {
+            document.write(unescape("%3Cscript src='./script/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+        </script>        
+
+        <script type="text/javascript" src="./string.format.js" ></script>
+        <script src="./Madlib.js" type="text/javascript" ></script>
+        <LINK REL=StyleSheet HREF="./Madlib.css" TYPE="text/css" />
+    </head>
+    <body>
+    <div class="header"><div class="title">WHAT'S IN A NAME?</div></div>
+    <div id="madlibs" class="madlibs">
+        <div id="errorCount" class="hidden">0</div>
+        <div id="errorText" class="hidden">There are errors marked in red. FIX THEM!</div>
+        <h1>MadLibs...Give me some words!</h2>
+            <form id="madlibsForm" name="madlibsForm">
+            <label for="noun0">Plural Noun</label>                  <input type="text" name="noun0"     id="noun0"   onblur="validate(this)" /><br />
+            <label for="noun1">A Noun</label>                       <input type="text" name="noun1"     id="noun1"   onblur="validate(this)" /><br />
+            <label for="noun2">A Second Noun</label>                <input type="text" name="noun2"     id="noun2"   onblur="validate(this)" /><br />
+            <label for="noun3">Part of the Body</label>             <input type="text" name="noun3"     id="noun3"   onblur="validate(this)" /><br />
+            <label for="noun4">Another Plural Noun</label>          <input type="text" name="noun4"     id="noun4"   onblur="validate(this)" /><br />
+            <label for="adverb0">An Adverb if you would</label>     <input type="text" name="adverb0"   id="adverb0" onblur="validate(this)" /><br />
+            <label for="noun5">Furthermore give me a noun</label>   <input type="text" name="noun5"     id="noun5"   onblur="validate(this)" /><br />
+            <label for="adjective0">An Adjective</label>            <input type="text" name="adj0"      id="adj0"    onblur="validate(this)" /><br />
+            <label for="adjective1">Another Adjective</label>       <input type="text" name="adj1"      id="adj1"    onblur="validate(this)" /><br />
+            <label for="noun6">Many Many Nouns</label>              <input type="text" name="noun6"     id="noun6"   onblur="validate(this)" /><br />
+            <label for="noun7">So Many Nouns</label>                <input type="text" name="noun7"     id="noun7"   onblur="validate(this)" /><br />
+            <label for="noun8">Person in room (Last Name)</label>   <input type="text" name="noun8"     id="noun8"   onblur="validate(this)" /><br />
+            <label for="noun9">Yes, yes another noun</label>        <input type="text" name="noun9"     id="noun9"   onblur="validate(this)" /><br />
+            <label for="noun10">Last noun</label>                   <input type="text" name="noun10"    id="noun10"  onblur="validate(this)" /><br />
+            <label for="adjective2">Finally, an Adjective</label>   <input type="text" name="adj2"      id="adj2"    onblur="validate(this)" /><br />
+            <input disabled type="button" id="process" name="process" class="clear" onClick="MadLib();return false;" value="Lib!"/>            
+        </form>
+        <div class="clear"> </div>
+    </div>
+        <div id="output" class="madlibs">
+        </div>
+
+    </body>
+</html>
