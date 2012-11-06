@@ -1,0 +1,79 @@
+
+.border {
+    border:     none;
+    position:   relative;
+}
+
+.dragBounds {
+    border:     1px solid black;
+    clear:      both;
+    height:     1px;
+    width:      411px;
+    
+}
+
+.drag {
+    background: #AAA;
+    border:     2px solid #444;
+    left:       0;
+    cursor:     pointer;
+    text-align: center;
+    top:        -0.7em;
+    width:      3em;   
+    -moz-border-radius: 15px;
+    border-radius: 15px;  
+}
+
+#toggle {
+    background: #AAA;
+    border:     1px solid #444;
+    clear:      both;
+    cursor:     pointer;
+    text-align: center;
+    
+    padding:    1em;
+    width:      5em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;    
+}
+
+.dot {
+    height:     10px;
+    position:   absolute;
+    top:        95px;
+    left:       280px;
+    width:      10px;
+    
+}
+
+#sineWave {
+    border:		none;
+	height:		200px;
+    margin:     0;
+    padding:    0;
+	width:		50%;
+}
+
+#vector {
+    position:   absolute;
+    width:      189px;
+    height:     189px;
+    border:     none;
+    top:        6;
+    left:       0;
+}
+
+
+.arrow {
+    border:     none;
+    height:     100px;
+    width:      100px;
+}
+
+.rotRight {
+    -webkit-transform:rotate(45deg); /* Chrome & Safari */
+    -moz-transform:rotate(45deg); /* Firefox */
+    -o-transform:rotate(45deg); /* Opera */
+    -ms-transform:rotate(45deg); /* IE 9+ */
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678, sizingMethod='auto expand'); /* IE 7-8 */
+}

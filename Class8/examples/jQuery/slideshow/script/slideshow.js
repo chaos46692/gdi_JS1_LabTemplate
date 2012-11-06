@@ -22,6 +22,6 @@ function slideSwitch() {
         });
 }
 
-$(function() {
+$(document).ready(function() {
     setInterval(slideSwitch, 5000 );
 });

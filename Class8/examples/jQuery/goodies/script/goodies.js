@@ -44,7 +44,6 @@ function changeMultipleExample() {
 }
 
 $(document).ready(function(){
-    
     $("#fadeIn").on("click", fadeInExample);
     $("#fadeOut").on("click", fadeOutExample);
     $("#toggle").on("click", toggleExample);

@@ -23,10 +23,10 @@ function checkSubmit() {
     }
     
     if ( errorCt === 0 ) {      //$("input[type='text']").hasClass("error")
-           $("#errorText").css("display","block");
+           $("#errorText").css("display","none");
            //return emptyCt;
     } else {
-            $("#errorText").css("display","none");
+            $("#errorText").css("display","block");
     }
     
     return emptyCt;
@@ -39,7 +39,7 @@ function validate(elementToBeValidated){
     
     
     var errorCount = document.getElementById("errorCount");
-    var intCount = checkSubmit();   // parseInt(errorCount.innerHTML);
+    var intCount =  parseInt(errorCount.innerHTML);
     if(elementToBeValidated.value ===""){
         if(elementToBeValidated.className !== "error"){
             errorCount.innerHTML = intCount + 1;
@@ -57,6 +57,8 @@ function validate(elementToBeValidated){
         errorCount.innerHTML = intCount;
         
     }
+    
+	checkSubmit();
     
     
     

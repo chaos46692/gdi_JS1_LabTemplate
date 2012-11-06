@@ -3,15 +3,13 @@
 */
 
 function validate() {
-    var result = validateField(this);
+    validateField(this);
     
     if ($("input[type='text'][class='error']").length > 0) {
         $("#errorText").show();
     } else {
         $("#errorText").hide();
     }
-    
-    return result;
 }
 
 function validateField(field) {
@@ -32,9 +30,7 @@ function writeMadLib() {
     var validationPassed = true;
    
     $("input[type='text']").each(function() {
-        //why does this work but inlining validateField(this) does not?
-        var validateresult = validateField(this);
-        validationPassed = validationPassed && validateresult;
+        validationPassed = validateField(this) && validationPassed;
     });
     
     if(validationPassed) {
