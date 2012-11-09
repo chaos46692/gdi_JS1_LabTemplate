@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="trig.css" />
+		
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		if (typeof jQuery == 'undefined')
+		{
+			document.write(unescape("%3Cscript src='./script/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script>
+        if (typeof jQuery.ui == 'undefined') {
+        // UI loaded jquery-ui.1.9.1.js
+            document.write(unescape("%3Cscript src='./script/jquery-ui.1.9.1.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+	<script type="text/javascript" src="script/trig.js"></script>
+</head>
+
+<body>
+
+
+<h1>Hey everybody, look! It's trigonometry!</h1>
+<div class="border">
+    <div id="cosineLine"> </div>
+    <div id="sineLine"> </div>
+    <div id="sineWave">
+        <img src="plot.png">
+    	
+    </div>
+    <div id="vector"> 
+        <img src="arrow2.png">
+    </div>
+    <div id="grid"> 
+        <img src="grid.png">
+    </div>
+    <!-- M 50 14 L 53 21 L 47 21 L 50 14 -->
+    <div class="dot" id="redDot" >
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 10 10" >
+            <circle cx="5" cy="5" r="4" stroke="red"   stroke-width="1" fill="red" > </circle>
+        </svg>
+    </div>
+    <div class="dot" id="blueDot" >
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 10 10" >
+            <circle cx="5" cy="5" r="4" stroke="blue"   stroke-width="1" fill="blue" > </circle>
+        </svg>
+    </div>
+</div>
+<h2>Drag the slider!</h2>
+<div id="dragBounds" class="dragBounds" >
+    <div class="drag" id="drag">0&deg;</div>
+</div>
+
+<h2>Or see a groovy animation!</h2>
+<div id="toggle">ANIMATE!</div>
+
+
+
+	<canvas id="" width="800" height="300"> </canvas>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+.dragBounds {
+    border:     1px solid #AAA;
+    clear:      both;
+    height:     1px;
+    width:      411px;
+    
+}
+
+.drag {
+    background: #AAA;
+    border:     2px solid #444;
+    left:       0;
+    cursor:     pointer;
+    text-align: center;
+    top:        -0.7em;
+    width:      3em;   
+    -moz-border-radius: 15px;
+    border-radius: 15px;  
+}

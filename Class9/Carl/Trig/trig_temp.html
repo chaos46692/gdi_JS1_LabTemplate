@@ -2,7 +2,7 @@
 <head>
     <title> </title>
     <link rel="stylesheet" type="text/css" href="trig.css" />
-		
+    	
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script type="text/javascript">
 		if (typeof jQuery == 'undefined')
@@ -35,8 +35,8 @@
                 <path id="cosWave" d="M 150.0  10.0 L 156.3  10.5 L 162.6  12.0 L 168.8  14.4 L 175.1  17.6 L 181.4  21.7 L 187.7  26.5 L 194.0  31.8 L 200.3  37.6 L 206.5  43.7 L 212.8  50.0 L 219.1  56.3 L 225.4  62.4 L 231.7  68.2 L 238.0  73.5 L 244.2  78.3 L 250.5  82.4 L 256.8  85.6 L 263.1  88.0 L 269.4  89.5 L 275.7  90.0 L 281.9  89.5 L 288.2  88.0 L 294.5  85.6 L 300.8  82.4 L 307.1  78.3 L 313.4  73.5 L 319.6  68.2 L 325.9  62.4 L 332.2  56.3 L 338.5  50.0 L 344.8  43.7 L 351.1  37.6 L 357.3  31.8 L 363.6  26.5 L 369.9  21.7 L 376.2  17.6 L 382.5  14.4 L 388.8  12.0 L 395.0  10.5 L 401.3  10.0 "   
             		stroke="rgba(10,10,10,0.5)"  stroke-width="1" fill="none" /></path>
             	
-            	<path id="horzAxes" d="M 10 50 L 402 50" stroke-width="1" stroke="rgba(10,10,10,1)" /></path>
-                <path id="horzAxesArrow" d="M 11 50 L 19 53 L 19 47 L 11 50" stroke-width="1" fill="black" stroke="black"> </path>
+            	<path id="horzAxes" d="M 150 50 L 402 50" stroke-width="1" stroke="rgba(10,10,10,1)" /></path>
+
             	<path id="vertAxes" d="M 150 90 L 150 10" stroke-width="1" stroke="rgba(10,10,10,1)" /></path>
             	
             	<path id="hTick1" d="M 213 55 L 213 45" stroke-width="1" stroke="rgba(10,10,10,1)" /></path>
@@ -51,6 +51,8 @@
     	</svg>
     	
     </div>
+</div>
+<div class="border">
     <div id="vector"> 
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" >
             <circle cx="50" cy="50" r="40" stroke="rgba(10,10,10,1)"   stroke-width="1" fill="none" > </circle>
@@ -65,6 +67,7 @@
 
         </svg>    
     </div>
+<div class="border">
     <!-- M 50 14 L 53 21 L 47 21 L 50 14 -->
     <div class="dot" id="redDot" >
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 10 10" >
@@ -76,18 +79,7 @@
             <circle cx="5" cy="5" r="4" stroke="blue"   stroke-width="1" fill="blue" > </circle>
         </svg>
     </div>
-</div>
-<h2>Drag the slider!</h2>
-<div id="dragBounds" class="dragBounds" >
-    <div class="drag" id="drag">0&deg;</div>
-</div>
 
-<h2>Or see a groovy animation!</h2>
-<div id="toggle">ANIMATE!</div>
-
-
-
-	<canvas id="" width="800" height="300"> </canvas>
 
 
 </body>

@@ -5,7 +5,7 @@
 }
 
 .dragBounds {
-    border:     1px solid black;
+    border:     1px solid #AAA;
     clear:      both;
     height:     1px;
     width:      411px;
@@ -46,6 +46,10 @@
     
 }
 
+#blueDot{
+    top:        18px; 
+}
+
 #sineWave {
     border:		none;
 	height:		200px;
@@ -54,7 +58,7 @@
 	width:		50%;
 }
 
-#vector {
+#vector, #grid {
     position:   absolute;
     width:      189px;
     height:     189px;
@@ -63,6 +67,32 @@
     left:       0;
 }
 
+#grid {
+    left:       1;
+    top:        7;
+    z-index:    0; 
+}
+#vector {
+    z-index:    1;   
+}
+
+#cosineLine, #sineline {
+    position:       absolute;
+    border-top:     1px dashed rgba(0,0,255,0.4);
+    height:         2px;
+    left:           93px;
+    top:            22px;
+    width:          190px;
+    z-index:        100;
+}
+
+#sineline {
+    border-top:     1px dashed rgba(255,0,0,0.4);   
+    left:           18px;
+    top:            98px;
+    width:          263px;
+    z-index:        101;
+}
 
 .arrow {
     border:     none;

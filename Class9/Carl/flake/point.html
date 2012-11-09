@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title> </title>
+    <script type="text/javascript" src="raphael-min.js"></script>
+    <script type="text/javascript" src="seurat.js"></script>
+</head>
+    <body>
+
+        <script>
+            // Creates canvas 320 × 200 at 10, 50
+            var paper = Raphael(10, 50, 600, 800);
+            paper.seurat({ imageSource: 'me4.png', step : 10 , attributes: {r: 4, stroke: "none"} });
+        </script>
+    </body>
+</html>
